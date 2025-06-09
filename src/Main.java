@@ -2,9 +2,13 @@
 // 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
 public class Main {
     public static void main(String[] args) {
-        String greeting = "Hello, Alice";
+        String message = "Hello, Java!";
 
-        System.out.println(greeting.toLowerCase());
-        System.out.println("Length : " + greeting.length());
+        for (int i = 0; i < message.length(); i++) {
+
+            if(message.charAt(i) == 'l') {
+                System.out.println(i);
+            }
+        }
     }
 }
